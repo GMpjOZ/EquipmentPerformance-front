@@ -22,7 +22,7 @@ v4.2.0
 ```
 
 ```
-~>npm install -g cnpm --registry=https://registry.npm.taobao.org
+~> npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
 npm很慢的话用上面的命令换源，换源以后要用cnpm命令
