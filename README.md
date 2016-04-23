@@ -6,42 +6,45 @@ https://nodejs.org/en/download/
 
 Windows Installer (.msi)   32-bit/64-bit
 
-###检查一下node和npm版本
-
-~>node -v
+####检查一下node和npm版本
+```
+~> node -v
 
 v4.2.6
 
-~>npm -v
+~> npm -v
 
 v3.5.3
 
-~>cnpm -v
+~> cnpm -v
 
 v4.2.0
+```
 
-tip:
-
+```
 ~>npm install -g cnpm --registry=https://registry.npm.taobao.org
+```
 
 npm很慢的话用上面的命令换源，换源以后要用cnpm命令
 
 
 ##配置gulp
 
-全局安装gulp和http-server
-
-~>npm install -g gulp http-server
+全局安装`gulp`和`http-server`
+```
+~> npm install -g gulp http-server
+```
 
 进入项目：
+```
+~> npm install gulp-imagemin gulp-sass gulp-minify-css gulp-uglify gulp-rename gulp-concat gulp-clean tiny-lr browser-sync gulp-livereload gulp-jslint --save-dev
 
-~>npm install gulp-imagemin gulp-sass gulp-minify-css gulp-uglify gulp-rename gulp-concat gulp-clean tiny-lr browser-sync gulp-livereload gulp-jslint --save-dev
+~> gulp
 
-~>gulp
+~> gulp watch
 
-~>gulp watch
-
-~>http-server
+~> http-server
+```
 
 ##安装livereload插件
 
