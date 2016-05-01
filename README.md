@@ -1,12 +1,12 @@
 # EquipmentPerformance-front
 
-##安装Node.js
+##锟斤拷装Node.js
 
 https://nodejs.org/en/download/  
 
 Windows Installer (.msi)   32-bit/64-bit
 
-####检查一下node和npm版本
+####锟斤拷锟斤拷一锟斤拷node锟斤拷npm锟芥本
 ```
 ~> node -v
 
@@ -25,19 +25,19 @@ v4.2.0
 ~> npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
-npm很慢的话用上面的命令换源，换源以后要用cnpm命令
+npm锟斤拷锟斤拷锟侥伙拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟筋换源锟斤拷锟斤拷源锟皆猴拷要锟斤拷cnpm锟斤拷锟斤拷
 
 
-##配置gulp
+##锟斤拷锟斤拷gulp
 
-全局安装`gulp`和`http-server`
+全锟街帮拷装`gulp`锟斤拷`http-server`
 ```
 ~> npm install -g gulp http-server
 ```
 
-进入项目：
+锟斤拷锟斤拷锟斤拷目锟斤拷
 ```
-~> npm install gulp-imagemin gulp-sass gulp-minify-css gulp-uglify gulp-rename gulp-concat gulp-clean tiny-lr browser-sync gulp-livereload gulp-jslint --save-dev
+~> npm install gulp-imagemin gulp-sass gulp-clean-css gulp-uglify gulp-rename gulp-concat gulp-clean tiny-lr browser-sync gulp-livereload gulp-jslint --save-dev
 
 ~> gulp
 
@@ -46,10 +46,10 @@ npm很慢的话用上面的命令换源，换源以后要用cnpm命令
 ~> http-server
 ```
 
-##安装livereload插件
+##锟斤拷装livereload锟斤拷锟斤拷
 
-安装好之后导入项目，点击actions+files,打开 compile sass ... 的按钮
+锟斤拷装锟斤拷之锟斤拷锟斤拷锟斤拷锟斤拷目锟斤拷锟斤拷锟斤拷actions+files,锟斤拷锟斤拷 compile sass ... 锟侥帮拷钮
 
-在浏览器工具栏上，Enable LiveReload,图标中间变成黄色就OK了
+锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟较ｏ拷Enable LiveReload,图锟斤拷锟叫硷拷锟斤拷锟缴伙拷色锟斤拷OK锟斤拷
 
-（其实实时更新的挺慢的，还不如自己F5）
+锟斤拷锟斤拷实实时锟斤拷锟铰碉拷挺锟斤拷锟侥ｏ拷锟斤拷锟斤拷锟斤拷锟皆硷拷F5锟斤拷
