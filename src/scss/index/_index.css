@@ -1,2 +1,112 @@
+body {
+  background-color: #fff; }
+
 #wapper {
-  background-color: #333; }
+  width: 70%;
+  margin: 0 auto;
+  min-height: 800px;
+  padding-bottom: 60px;
+  color: #000; }
+  #wapper nav {
+    margin-top: 40px;
+    padding: 10px 0; }
+    #wapper nav a {
+      display: block;
+      position: fixed;
+      top: 12%;
+      right: 6%; }
+      #wapper nav a i {
+        color: #000; }
+  #wapper main form {
+    border: 2px solid #000;
+    border-radius: 6px;
+    min-width: 480px; }
+    #wapper main form h3 {
+      font-size: 20px;
+      padding: 6px 20px;
+      font-weight: bold;
+      border-bottom: 2px solid #000; }
+    #wapper main form .inputs {
+      padding: 40px 50px; }
+      #wapper main form .inputs label {
+        display: block;
+        margin-bottom: 16px;
+        height: 60px; }
+        #wapper main form .inputs label p {
+          margin-bottom: 6px;
+          font-weight: bold; }
+        #wapper main form .inputs label input {
+          border: none;
+          display: block;
+          width: 100%;
+          padding: 7px 10px;
+          font-size: 14px;
+          background-color: none;
+          border: 1px solid #000;
+          margin-top: 6px; }
+          #wapper main form .inputs label input:focus {
+            outline: 1px solid; }
+      #wapper main form .inputs .select {
+        margin-bottom: 16px; }
+        #wapper main form .inputs .select .select-head {
+          margin-bottom: 2px; }
+          #wapper main form .inputs .select .select-head label {
+            margin-bottom: 0; }
+            #wapper main form .inputs .select .select-head label p {
+              margin-bottom: 6px;
+              font-weight: bold; }
+            #wapper main form .inputs .select .select-head label input {
+              width: 60%;
+              border: 1px solid #000;
+              display: inline-block; }
+              #wapper main form .inputs .select .select-head label input:focus {
+                outline: none; }
+            #wapper main form .inputs .select .select-head label i {
+              background: none;
+              border: none;
+              border: 1px solid #000;
+              padding: 7.5px 6px;
+              display: inline-block;
+              cursor: pointer; }
+        #wapper main form .inputs .select #sub {
+          width: 60%;
+          display: none;
+          border: 1px solid #000;
+          border-top: none;
+          padding-top: 2px; }
+          #wapper main form .inputs .select #sub li {
+            font-size: 14px;
+            margin: 2px 2px;
+            padding: 4px 10px;
+            cursor: pointer; }
+            #wapper main form .inputs .select #sub li:first-child {
+              margin-top: 2px; }
+            #wapper main form .inputs .select #sub li:hover {
+              background-color: #000;
+              color: #fff; }
+          #wapper main form .inputs .select #sub hr {
+            border: none;
+            height: 1px;
+            background-color: #000; }
+    #wapper main form .btns {
+      display: -webkit-flex;
+      display: flex;
+      justify-content: space-around;
+      width: 98%;
+      margin: 0 auto;
+      border-top: 1px solid #000;
+      padding: 3px 0; }
+      #wapper main form .btns button {
+        width: 50%;
+        background: none;
+        border: none;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 6px 0;
+        flex-grow: 1;
+        cursor: pointer; }
+        #wapper main form .btns button:first-child {
+          border-right: 1px solid #000; }
+        #wapper main form .btns button:hover {
+          background-color: #000;
+          color: #fff; }

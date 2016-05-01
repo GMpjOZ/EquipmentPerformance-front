@@ -1,8 +1,13 @@
-#wapper{
-  background-color: #333;
+body {
+background-color: #fff;
 }
-
-
-@import 'header.scss';
-@import 'main.scss';
-@import 'footer.scss';
+#wapper{
+  width: 70%;
+  margin: 0 auto;
+  min-height: 800px;
+  padding-bottom:60px;
+  color: #000;
+  @import 'header.scss';
+  @import 'main.scss';
+  @import 'footer.scss';
+}

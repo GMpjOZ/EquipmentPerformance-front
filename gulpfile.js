@@ -4,7 +4,7 @@ var gulp = require('gulp');
 // 引入组件
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
-var minifycss = require('gulp-minify-css');
+var cleancss = require('gulp-clean-css');
 var uglify  = require('gulp-uglify');
 var rename = require('gulp-rename');
 var concat  = require('gulp-concat');
@@ -40,10 +40,10 @@ gulp.task('html', function() {
 gulp.task('css', function () {
   	gulp.src('./src/scss/*.scss')
     	.pipe(sass.sync().on('error', sass.logError))
-    	.pipe(gulp.dest('./css'))
         .pipe(rename({ suffix: '.min' }))
-        .pipe(minifycss())
+        .pipe(cleancss())
         .pipe(livereload(server))
+        .pipe(gulp.dest('./css'))
         .pipe(gulp.dest('./dist/css'));
 });
 
