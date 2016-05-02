@@ -19,6 +19,7 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.1",
     "gulp-uglify": "^1.5.3",
+    "node-sass": "^3.6.0",
     "tiny-lr": "^0.2.1"
   }
 }
