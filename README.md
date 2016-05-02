@@ -25,7 +25,7 @@ v4.2.0
 ~> npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 
-npm很慢的话用上面的命令换源，换源以后要用cnpm命令
+`npm`很慢的话用上面的命令换源，换源以后要用`cnpm`命令
 
 
 ##配置gulp
@@ -38,6 +38,7 @@ npm很慢的话用上面的命令换源，换源以后要用cnpm命令
 进入项目：
 ```
 ~> npm install --save-dev
+
 ~> npm install gulp-imagemin gulp-sass gulp-clean-css gulp-uglify gulp-rename gulp-concat gulp-clean tiny-lr browser-sync gulp-livereload gulp-jslint --save-dev
 
 ~> gulp
