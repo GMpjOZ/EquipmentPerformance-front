@@ -37,6 +37,7 @@ npm很慢的话用上面的命令换源，换源以后要用cnpm命令
 
 进入项目：
 ```
+~> npm install --save-dev
 ~> npm install gulp-imagemin gulp-sass gulp-clean-css gulp-uglify gulp-rename gulp-concat gulp-clean tiny-lr browser-sync gulp-livereload gulp-jslint --save-dev
 
 ~> gulp
