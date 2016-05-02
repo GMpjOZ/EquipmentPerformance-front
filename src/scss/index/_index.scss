@@ -1,12 +1,12 @@
 body {
-background-color: #fff;
+  background-color: $white;
 }
 #wapper{
   width: 70%;
   margin: 0 auto;
   min-height: 800px;
   padding-bottom:60px;
-  color: #000;
+  color:$black;
   @import 'header.scss';
   @import 'main.scss';
   @import 'footer.scss';
