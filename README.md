@@ -16,9 +16,6 @@ v4.2.6
 
 v3.5.3
 
-~> cnpm -v
-
-v4.2.0
 ```
 
 ```
@@ -26,6 +23,13 @@ v4.2.0
 ```
 
 `npm`很慢的话用上面的命令换源，换源以后要用`cnpm`命令
+
+```
+~> cnpm -v
+
+v4.2.0
+```
+
 
 
 ##配置gulp
@@ -36,9 +40,12 @@ v4.2.0
 ```
 
 进入项目：
-```
-~> npm install gulp-imagemin gulp-sass gulp-clean-css gulp-uglify gulp-rename gulp-concat gulp-clean tiny-lr browser-sync gulp-livereload gulp-jslint --save-dev
 
+```
+~> npm install
+```
+
+```
 ~> gulp
 
 ~> gulp watch
@@ -51,5 +58,3 @@ v4.2.0
 安装好之后导入项目，点击actions+files,打开 compile sass ... 的按钮
 
 在浏览器工具栏上，Enable LiveReload,图标中间变成黄色就OK了
-
-（其实实时更新的挺慢的，还不如自己F5）
