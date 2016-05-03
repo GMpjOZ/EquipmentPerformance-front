@@ -6,10 +6,11 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GMpjOZ/EquipmentPerformance-front.git"
+    "url": "https://github.com/GMpjOZ/EquipmentPerformance-front.git"
   },
   "devDependencies": {
     "browser-sync": "^2.12.5",
+    "gulp": "^3.9.1",
     "gulp-clean": "^0.3.2",
     "gulp-clean-css": "^2.0.6",
     "gulp-concat": "^2.6.0",

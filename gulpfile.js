@@ -1,7 +1,5 @@
-// 引入 gulp
 var gulp = require('gulp');
 
-// 引入组件
 var imagemin = require('gulp-imagemin');
 var sass = require('gulp-sass');
 var cleancss = require('gulp-clean-css');
@@ -14,22 +12,8 @@ var server = tinylr();
 var browserSync = require('browser-sync');
 var port = 35729;
 var livereload = require('gulp-livereload');
-
 var jslint = require('gulp-jslint');
 
-gulp.task('jslint', function () {
-    return gulp.src([
-        './src./js/*.js'
-    ]).pipe(jslint({
-        node: true,
-        nomen: true,
-        sloppy: true,
-        plusplus: true,
-        unparam: true,
-        stupid: true
-    }));
-});
-gulp.task('default', ['jslint']);
 
 gulp.task('html', function() {
     gulp.src('./src/*.html')
@@ -99,3 +83,18 @@ gulp.task('watch',function(){
 	gulp.watch('./src/images/**/*',['images']);
 	gulp.watch('./src/js/*.js',['js']);
 });
+
+
+gulp.task('jslint', function () {
+    return gulp.src([
+        './src./js/*.js'
+    ]).pipe(jslint({
+        node: true,
+        nomen: true,
+        sloppy: true,
+        plusplus: true,
+        unparam: true,
+        stupid: true
+    }));
+});
+gulp.task('default', ['jslint']);
