@@ -1,7 +1,7 @@
 ﻿# EquipmentPerformance-front
 
-##安装Node.js
-
+##安装Node. js  
+   
 https://nodejs.org/en/download/  
 
 Windows Installer (.msi)   32-bit/64-bit
