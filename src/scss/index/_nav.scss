@@ -7,7 +7,7 @@ nav {
     text-align: left;
 
     >li {
-      border-bottom: 2px solid $black;
+      border-bottom: 1px solid $black;
       padding: 2px 0;
       a {
         display: inline-block;
@@ -37,7 +37,7 @@ nav {
     }
 
     >li:first-child {
-      border-top: 2px solid $black;
+      border-top: 1px solid $black;
     }
   }
 }
