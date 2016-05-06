@@ -1,0 +1,43 @@
+nav {
+  width: 300px !important;
+  min-height: 640px;
+  padding: 60px 20px;
+  border-right: 2px solid $black;
+  >ul {
+    text-align: left;
+
+    >li {
+      border-bottom: 2px solid $black;
+      padding: 2px 0;
+      a {
+        display: inline-block;
+        display: -webkit-flex;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        color: $black;
+        width: 100%;
+        padding: 8px 24px;
+        &:hover {
+          background-color: $black;
+          color: $white;
+        }
+        i {
+          margin-top:2px;
+        }
+      }
+      .sub {
+        display: none;
+        li {
+          a {
+            padding-left: 40px;
+          }
+        }
+      }
+    }
+
+    >li:first-child {
+      border-top: 2px solid $black;
+    }
+  }
+}

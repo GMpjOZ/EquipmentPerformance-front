@@ -1,13 +1,14 @@
 body {
   background-color: $white;
 }
-#wapper{
-  width: 70%;
-  margin: 0 auto;
-  min-height: 800px;
-  padding-bottom:60px;
+#page{
+  min-width: 1080px;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   color:$black;
-  @import 'header.scss';
+  @import 'nav.scss';
   @import 'main.scss';
-  @import 'footer.scss';
 }

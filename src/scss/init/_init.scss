@@ -1,0 +1,11 @@
+body {
+  background-color: $white;
+}
+#wapper{
+  width: 70%;
+  margin: 0 auto;
+  min-height: 800px;
+  padding: 60px;
+  color: $black;
+  @import 'main.scss';
+}
