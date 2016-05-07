@@ -1,6 +1,6 @@
 var gulp = require('gulp');
 
-var imagemin = require('gulp-imagemin');
+
 var sass = require('gulp-sass');
 var cleancss = require('gulp-clean-css');
 var uglify  = require('gulp-uglify');
@@ -14,6 +14,10 @@ var port = 35729;
 var livereload = require('gulp-livereload');
 
 
+gulp.task('clean', function() {
+    gulp.src(['./dist/css', './dist/js'], {read: false})
+        .pipe(clean());
+});
 
 gulp.task('html', function() {
     gulp.src('./src/*.html')
@@ -30,13 +34,6 @@ gulp.task('css', function () {
         .pipe(gulp.dest('./css'))
         .pipe(gulp.dest('./dist/css'));
 });
-
-gulp.task('images', function(){
-    gulp.src('./src/images/**/*')
-        .pipe(imagemin())
-        .pipe(livereload(server))
-        .pipe(gulp.dest('./dist/images'));
-})
 
 gulp.task('fonts', function () {
 	gulp.src('./src/fonts/*')
@@ -67,13 +64,10 @@ gulp.task('serve', function() {
     browserSync.reload();
 });
 
-gulp.task('clean', function() {
-    gulp.src(['./dist/css', './dist/js', './dist/images', '.dist/fonts'], {read: false})
-        .pipe(clean());
-});
+
 
 gulp.task('default', ['clean'], function(){
-    gulp.start('html','css','images','js', 'fonts');
+    gulp.start('html','css','js', 'fonts');
 });
 
 gulp.task('watch',function(){

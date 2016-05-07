@@ -3,11 +3,6 @@ body {
 }
 #page{
   min-width: 1080px;
-  display: flex;
-  display: -webkit-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
   color:$black;
   @import 'nav.scss';
   @import 'main.scss';
