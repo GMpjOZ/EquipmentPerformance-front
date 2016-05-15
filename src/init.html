@@ -12,26 +12,40 @@
 
     <div id="wapper">
       <main>
-        <form class="" action="index.html" method="post">
+        <form action="index.html" method="post">
           <h3>FORM</h3>
           <div class="inputs">
             <label><p>LABEL 1</p><input type="text" name="name" value="" placeholder="please input ..."></label>
             <label><p>LABEL 2</p><input type="text" name="name" value="" placeholder="please input ..."></label>
             <label><p>LABEL 3</p><input type="text" name="name" value="" placeholder="please input ..."></label>
             <div class="select">
-              <div class="select-head">
+              <div class="select_head">
                   <label>
                     <p>SELECT</p>
-                    <input id="show" type="text" name="name" value="" readonly>
-                    <i id="i_select" class="fa fa-angle-down"></i>
+                    <input class="select_show" type="text" name="name" value="" readonly>
+                    <i class="fa fa-angle-down select_button"></i>
                   </label>
               </div>
-              <ul id="sub">
+              <ul class="select_sub">
                   <li>OPTION1</li><hr>
                   <li>OPTION2</li><hr>
                   <li>OPTION3</li>
               </ul>
           </div>
+          <div class="select">
+            <div class="select_head">
+                <label>
+                  <p>SELECT</p>
+                  <input class="select_show" type="text" name="name" value="" readonly>
+                  <i class="fa fa-angle-down select_button"></i>
+                </label>
+            </div>
+            <ul class="select_sub">
+                <li>OPTION1</li><hr>
+                <li>OPTION2</li><hr>
+                <li>OPTION3</li>
+            </ul>
+        </div>
         </div>
           <div class="btns">
             <button type="reset" name="button">Reset</button><button type="submit" name="button">Submit</button>

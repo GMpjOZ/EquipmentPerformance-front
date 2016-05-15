@@ -17,166 +17,68 @@
         <h1>EP.</h1>
         <ul id="menu">
           <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
+            <a href="#">可利用率<i class="fa fa-angle-down"></i></a>
             <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
+              <li><a href="#">查看所有设备</a></li>
+              <li><a href="#">按照类型查看</a></li>
             </ul>
           </li>
           <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
+            <a href="#">故障率<i class="fa fa-angle-down"></i></a>
             <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
+                <li><a href="#">查看所有设备</a></li>
+                <li><a href="#">按照类型查看</a></li>
             </ul>
           </li>
           <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
+            <a href="#">停机损失<i class="fa fa-angle-down"></i></a>
             <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
+                <li><a href="#">查看所有设备</a></li>
+                <li><a href="#">按照类型查看</a></li>
             </ul>
           </li>
           <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
+            <a href="#">MRRT<i class="fa fa-angle-down"></i></a>
             <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
+                <li><a href="#">查看所有设备</a></li>
+                <li><a href="#">按照类型查看</a></li>
             </ul>
           </li>
           <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
-            <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-            </ul>
+            <a href="#">完好率</a>
           </li>
           <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
-            <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-            </ul>
-          </li>
-          <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
-            <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-            </ul>
-          </li>
-          <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
-            <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-            </ul>
-          </li>
-          <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
-            <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-            </ul>
-          </li>
-          <li class="has-sub">
-            <a href="#">first-class navigation<i class="fa fa-angle-down"></i></a>
-            <ul class="sub">
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-              <li><a href="#">second-class navigation</a></li>
-            </ul>
+            <a href="#">报销率</a>
           </li>
         </ul>
       </nav>
       <main>
+          <form action="index.html" method="post">
+              <div class="inputs">
+                    <div class="select">
+                      <div class="select_head">
+                          <label>
+                              <p>设备类型</p>
+                              <input class="select_show" type="text" name="name" value="" readonly>
+                              <i class="fa fa-angle-down select_button"></i>
+                          </label>
+                      </div>
+                      <ul class="select_sub">
+                           <li>OPTION1</li><hr>
+                           <li>OPTION2</li><hr>
+                           <li>OPTION3</li>
+                      </ul>
+               </div>
+             </div>
+             <button type="submit" name="button">查找</button>
+          </form>
+
         <div id="container"></div>
       </main>
     </div>
 
 
 
-    <script type="text/javascript"src="js/main.min.js"></script>
-    <script type="text/javascript">
-    $(function () {
-      $('#container').highcharts({
-          chart: {
-              type: 'areaspline'
-          },
-          title: {
-              text: 'Average fruit consumption during one week'
-          },
-          legend: {
-              layout: 'vertical',
-              align: 'left',
-              verticalAlign: 'top',
-              x: 150,
-              y: 100,
-              floating: true,
-              borderWidth: 1,
-              backgroundColor: (Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'
-          },
-          xAxis: {
-              categories: [
-                  'Monday',
-                  'Tuesday',
-                  'Wednesday',
-                  'Thursday',
-                  'Friday',
-                  'Saturday',
-                  'Sunday'
-              ],
-              plotBands: [{ // visualize the weekend
-                  from: 4.5,
-                  to: 6.5,
-                  color: 'rgba(68, 170, 213, .2)'
-              }]
-          },
-          yAxis: {
-              title: {
-                  text: 'Fruit units'
-              }
-          },
-          tooltip: {
-              shared: true,
-              valueSuffix: ' units'
-          },
-          credits: {
-              enabled: false
-          },
-          plotOptions: {
-              areaspline: {
-                  fillOpacity: 0.5
-              }
-          },
-          series: [{
-              name: 'John',
-              data: [3, 4, 3, 5, 4, 10, 12]
-          }, {
-              name: 'Jane',
-              data: [1, 3, 4, 3, 3, 5, 4]
-          }]
-      });
-    });
-    </script>
+    <script type="text/javascript" src="js/main.min.js"></script>
   </body>
 </html>
