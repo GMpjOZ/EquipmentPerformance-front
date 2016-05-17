@@ -62,7 +62,7 @@ $(function(){
                         $(this).removeClass('fa-angle-up').addClass('fa-angle-down');
                     }
                 });
-            })
+            });
         });
     });
 

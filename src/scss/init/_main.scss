@@ -3,7 +3,6 @@ main {
         border: 2px solid $black;
         border-radius: 6px;
         min-width: 480px;
-        position: relative;
         >ul {
             border-bottom: 1px solid $black;
             display: flex;
@@ -27,6 +26,7 @@ main {
             }
         }
         form {
+            position: relative;
           .inputs {
             border-top: 1px dashed $black;
             padding: 40px 50px;
@@ -52,6 +52,9 @@ main {
                   outline: 1px solid;
                 }
               }
+            }
+            label.time{
+                width: 52%;
             }
           .select {
             width: 80%;
