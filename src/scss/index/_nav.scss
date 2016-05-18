@@ -2,27 +2,18 @@ nav {
   width: 280px;
   min-height: 640px;
   padding: 0 10px;
+  padding-top: 60px;
   order:-1;
   display: inline-block;
   background-color: $white;
   border-right: 2px solid $black;
-  h1 {
-    font-size: 48px;
-    font-weight: normal;
-    margin: 0 -20px 60px -20px;
-    padding: 6px 20px;
-    letter-spacing: 6px;
-    text-align: left;
-    background-color: $black;
-    color: $white;
-    border: 4px solid $black;
-  }
   >ul {
     text-align: left;
     >li {
       border-bottom: 1px solid $black;
       padding: 2px 0;
-      a {
+      p,a {
+        cursor: pointer;
         display: inline-block;
         display: -webkit-flex;
         display: flex;
@@ -39,11 +30,30 @@ nav {
           margin-top:2px;
         }
       }
+      a.active{
+          background-color: $black;
+          color: $white;
+      }
+
       .sub {
         display: none;
+        margin-top: 2px;
         li {
           a {
-            padding-left: 40px;
+              display: inline-block;
+              color: $black;
+              width: 100%;
+              padding: 8px 24px;
+              padding-left: 40px;
+              margin-bottom: 2px;
+              &:hover {
+                background-color: $black;
+                color: $white;
+              }
+          }
+          a.active{
+              background-color: $black;
+              color: $white;
           }
         }
       }

@@ -4,11 +4,14 @@ body {
 #page{
   min-width: 1080px;
   color:$black;
-  display: -webkit-flex;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  @import 'nav.scss';
-  @import 'main.scss';
+  @import 'header.scss';
+  div.middle{
+      display: -webkit-flex;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: flex-start;
+      @import 'nav.scss';
+      @import 'main.scss';
+  }
 }

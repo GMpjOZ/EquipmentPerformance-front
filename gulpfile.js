@@ -41,8 +41,6 @@ gulp.task('default', function(){
 
 gulp.task('watch',function(){
 	livereload.listen()
-	gulp.watch('./src/*.html',['html']);
 	gulp.watch('./src/scss/*/*.scss',['css']);
-	gulp.watch('./src/img/**/*',['img']);
 	gulp.watch('./src/js/*.js',['js']);
 });
