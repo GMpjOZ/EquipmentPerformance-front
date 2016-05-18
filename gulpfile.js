@@ -1,27 +1,23 @@
 var gulp = require('gulp');
 
-
 var sass = require('gulp-sass');
-var cleancss = require('gulp-clean-css');
+var minifycss = require('gulp-clean-css');
 var uglify  = require('gulp-uglify');
 var rename = require('gulp-rename');
 var concat  = require('gulp-concat');
 var clean = require('gulp-clean');
-var tinylr = require('tiny-lr');
-var server = tinylr();
-var browserSync = require('browser-sync');
-var port = 35729;
-var livereload = require('gulp-livereload');
 
-
+gulp.task('html', function() {
+    gulp.src('./src/*.html')
+        .pipe(gulp.dest('./dist'));
+})
 
 gulp.task('css', function () {
   	gulp.src('./src/scss/*.scss')
-    	.pipe(sass.sync().on('error', sass.logError))
+    	.pipe(sass())
         .pipe(rename({ suffix: '.min' }))
-        .pipe(cleancss())
-        .pipe(livereload(server))
-        .pipe(gulp.dest('./src/css'))
+        .pipe(minifycss())
+        .pipe(gulp.dest('./dist/css'));
 });
 
 
@@ -30,17 +26,26 @@ gulp.task('js', function () {
         .pipe(concat('app.js'))
         .pipe(rename({ suffix: '.min' }))
         .pipe(uglify())
-        .pipe(livereload(server))
-        .pipe(gulp.dest('./src/js'));
+        .pipe(gulp.dest('./dist/js'));
 });
 
+gulp.task('img', function() {
+    gulp.src('./src/img/*.*')
+        .pipe(gulp.dest('./dist/img'));
+})
 
-gulp.task('default', function(){
-    gulp.start('css','js');
+gulp.task('clean', function() {
+    return gulp.src(['./dist/css','./dist/js','dist/*.html','./dist/img'],{read: false})
+               .pipe(clean())
+});
+
+gulp.task('default', ['clean'], function(){
+    gulp.start('css','js','html','img');
 });
 
 gulp.task('watch',function(){
-	livereload.listen()
+    gulp.watch('./src/*.html',['html']);
 	gulp.watch('./src/scss/*/*.scss',['css']);
 	gulp.watch('./src/js/*.js',['js']);
+    gulp.watch('./src/img/*.*',['img']);
 });
