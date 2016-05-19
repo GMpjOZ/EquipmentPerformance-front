@@ -1,9 +1,12 @@
 nav {
   width: 280px;
-  min-height: 640px;
+  margin-top: 0;
+  vertical-align: top;
+  min-height: 560px;
   padding: 0 10px;
   padding-top: 60px;
   order:-1;
+  align-self: flex-start;
   display: inline-block;
   background-color: $white;
   border-right: 2px solid $black;

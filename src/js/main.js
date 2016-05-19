@@ -84,16 +84,21 @@ $(function(){
                 second.stop(true,false).slideDown(400);
                 first.find('i').removeClass('fa-angle-down').addClass('fa-angle-up');
             } else {
-                second.stop(true,false).slideUp(400);;
+                second.stop(true,false).slideUp(400);
                 first.find('i').removeClass('fa-angle-up').addClass('fa-angle-down');
             }
         });
     });
-    link.on('click', function(e){
-        link.each(function(index,domEle){
-            $(domEle).removeClass('active');
-            console.log('s');
+    function aa(){
+        $('#menu').find('a').each(function(index, domEle){
+            if($(domEle).hasClass('active')){
+                $(domEle).parents('.sub').stop(true,false).show();
+            }
         });
-        $(e.target).addClass('active');
+    };
+    aa();
+
+    $('#warning').find('button').on('click', function(){
+        $('#warning').hide();
     })
 });

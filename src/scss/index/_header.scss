@@ -48,7 +48,6 @@ header {
                 height: auto;
                 margin-right: 20px;
                 .select_head {
-                    margin-bottom: 2px;
                     label {
                         margin-bottom: 0;
                         p {
@@ -79,11 +78,12 @@ header {
                   width:460px;
                   display: none;
                   position: absolute;
-                  top: 58px;
+                  top: 57px;
                   left: 201px;
                   border: 1px solid $black;
                   border-top: none;
                   padding-top: 2px;
+                  background-color: $white;
                   li {
                         font-size: 14px;
                         margin: 2px 2px;

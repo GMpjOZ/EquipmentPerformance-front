@@ -2,7 +2,7 @@ main {
     div#all_forms {
         border: 2px solid $black;
         border-radius: 6px;
-        min-width: 480px;
+        min-width: 520px;
         >ul {
             border-bottom: 1px solid $black;
             display: flex;
@@ -31,7 +31,7 @@ main {
             .inputs {
                 border-top: 1px dashed $black;
                 padding: 50px 40px;
-                letter-spacing: -8px;
+                letter-spacing: -12px;
                 * {
                     letter-spacing: 0;
                 }
@@ -78,7 +78,7 @@ main {
                     width: 100%;
                     padding:0;
                     letter-spacing: -8px;
-                    *{
+                    * {
                         letter-spacing: 0;
                     }
                     p {
@@ -99,7 +99,8 @@ main {
                       background: none;
                       border:none;
                       border: 1px solid $black;
-                      padding: 7.5px 6px;
+                      padding: 7.5px 0;
+                      text-align: center;
                       display: inline-block;
                       cursor: pointer;
                     }
